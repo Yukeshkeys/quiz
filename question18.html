@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            question18
+        </title>
+    </head>
+    <body style="background-color:lightgrey">
+        <h1 style="border:2px solid black;background-color:azure;margin-bottom: 0px;height: 80px;"><b>Time Remaining:</b><b id="time">30</b><b>Secs</b><button style="text-align: right;float:right;background-color:cornsilk;">Total Questions:20</button><br>Question 18:</h1>
+        <fieldset style="background-color:azure;">
+        <h2>
+            In which Italian city can you find the Colosseum?
+        </h2>
+        <form>
+        <ul>
+        <input type="radio" name="name" value="name">Milan<br><br>
+        <input type="radio" name="name" value="name">Naples<br><br>
+        <input type="radio" name="name" value="name">Rome<br><br>
+        <input type="radio" name="name" value="name">Venice
+        <br><br>
+        </ul>
+        <button><a href="question19.html">Submit</button></a>
+        <input type="reset" name="reset">
+        </form>
+    </fieldset>
+    <script>
+        var time=30;
+        setInterval(run,1000);
+        function run()
+        {
+            var element=document.getElementById("time");
+            if(time==0)
+            {
+                window.location.href="question19.html";
+            }
+            element.innerHTML=--time;
+        }
+    </script>
+    </body>
+</html>
